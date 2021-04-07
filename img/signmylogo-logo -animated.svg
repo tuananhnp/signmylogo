@@ -66,9 +66,9 @@
 <style>.KFThoDDT_0{stroke-dasharray:231 233;stroke-dashoffset:232;animation:KFThoDDT_draw 700ms ease-in-out 0ms forwards;}@keyframes KFThoDDT_draw{100%{stroke-dashoffset:0;}}@keyframes KFThoDDT_fade{0%{stroke-opacity:1;}91.83673469387755%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 <style>.AmGCHOhW_0{stroke-dasharray:110 112;stroke-dashoffset:111;animation:AmGCHOhW_draw 400ms ease 0ms forwards;}@keyframes AmGCHOhW_draw{100%{stroke-dashoffset:0;}}@keyframes AmGCHOhW_fade{0%{stroke-opacity:1;}91.30434782608695%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 <style>
-.signmylogo-stroke1 path {animation-delay: 0.3s}
-.signmylogo-stroke2 path {animation-delay: 0.7s}
-.signmylogo-stroke3 path {animation-delay: 0s}
-.signmylogo-stroke4 path {animation-delay: 0.7s}
+.signmylogo-stroke1 path {animation-delay: 0.8s}
+.signmylogo-stroke2 path {animation-delay: 1.2s}
+.signmylogo-stroke3 path {animation-delay: 0.5s}
+.signmylogo-stroke4 path {animation-delay: 1.2s}
 </style>
 </svg>
