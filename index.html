@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <link rel="stylesheet" href="css/fader.css" type="text/css">
+  <link rel="stylesheet" href="css/signmylogo-nav.css">
+  <link rel="stylesheet" href="css/animated_nav_icon.css">
+  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/universal-parallax.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.hotspot.dark.css">
+  <link rel="stylesheet" href="css/jquery.hotspot.light.css">
+  <link rel="stylesheet" href="css/2-columns-test.css">
+</head>
+
+<body oncontextmenu="return false">
+  <svg id="fader" class="fade-out"></svg>
+  <script> fadeInPage();
+  </script>
+  <div id="scrolltotop_parent" class="scrolltotop_hide_onload scrolltotop_circle" style="display: none;">
+    <div tabindex="0" id="scrolltotop_arrow"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+    <div class="container-fluid">
+      <button class="navbar-toggler nav-button border-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbar4" onclick="switchColor()">
+        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar4">
+        <ul class="navbar-nav">
+          <li class="brand nav-item mx-2" ><a class="nav-link navbar-brand mr-0" href="index"><img class="d-inline-block align-top d-flex align-items-center img-fluid pb-3" src="img/signmylogo-logo - inverted.png" width="250"></a></li>
+          <li class="nav-item mx-2 align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="graphic-design">SHOWCASE</a></li>
+          <li class="nav-item mx-2 align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="">WHY SIGNMYLOGO?</a></li>
+          <li class="nav-item mx-2 align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="">HOW TO ORDER</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="text-center align-items-center d-flex bg-light" id="cover" style="height: 100vh">
+    <div class="pb-5 mb-5 container">
+      <div class="row pt-5">
+        <div class="mx-auto col-lg-6 col-md-7 col-9" >
+          <img class="img-fluid d-block mx-auto" src="img/signmylogo-logo -animated.svg">
+        </div>
+        <div class="col-12 d-flex align-items-center px-sm-3 col-lg-6 col-sm-12 px-4" >
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row justify-content-center justify-content-lg-start">
+                <h1 class="text-center text-lg-left" style="color:#094877">Unique logotype<br>from your signature</h1>
+              </div>
+              <div class="row">
+                <p class="lead text-center text-lg-left">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you going online &amp; branding with your name?<br><br>Not only SignMyLogo will&nbsp;<i>hand-trace</i>&nbsp;to digitalize your signature, but also <i>animate</i>&nbsp;it for a handwriting effect - just like it was written on the screen by your own hand!</p>
+              </div>
+              <div class="row">
+                <a class="btn btn-lg px-3 pb-1 mx-auto mx-lg-0 btn-dark" href="showcase">See demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/fader.js"></script>
+  <script src="js/navbar.shrink.onscroll.js"></script>
+  <script src="js/dropdown.transition.js"></script>
+  <script src="js/lucid.smooth.scroll.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
+  <script src="js/scrolltotop_arrow_code.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/prevent_vertical_scroll.js"></script>
+  <script src="js/universal-parallax.min.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/inview.js"></script>
+  <script src="js/2-columns-test.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.nav-button').on('click', function() {
+        $('.animated-icon').toggleClass('open');
+      });
+    });
+  </script>
+  <script>
+    $("body").on("contextmenu", "img", function(e) {
+      return false;
+    });
+  </script>
+  <script>
+    new universalParallax().init({
+      speed: 12
+    });
+  </script>
+  <script>
+    $(window).on('load', function() {
+      $(this).impulse();
+    });
+  </script>
+  <script>
+    $('.btn, .btn-outline, .btn-lg').click(function() {
+      var sectionTo = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(sectionTo).offset().top
+      }, 2000);
+    });
+  </script>
+  <script >
+    function switchColor() {
+      var element = document.body;
+      element.classList.toggle("switch-color");
+    }
+  </script>
+  <script >
+    var $svg1 = $('#starrynight-front1');
+    var in_view = new Waypoint.Inview({
+      element: $svg1[0],
+      enter: function() {
+        $svg1.addClass('animated');
+      },
+      exited: function() {
+        $svg1.removeClass('animated');
+      },
+    });
+  </script>
+  <script>
+    var titles = ["a painter", "an illustrator", "a photographer", "a videgrapher", "a film maker", "an architect", "an interior designer", "a book author", "a musician", "a blogger"];
+
+    function rotateTitle() {
+      var ct = $("#profession").data("title") || 0;
+      $("#profession").data("title", ct == titles.length - 1 ? 0 : ct + 1).text(titles[ct]).fadeIn().delay(1500).fadeOut(200, rotateTitle);
+    }
+    $(rotateTitle);
+  </script>
+  
+</body>
+
+</html>
