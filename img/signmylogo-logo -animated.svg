@@ -61,14 +61,14 @@
 	<path id="XMLID_4_" class="st2 hMniVvKr_3" d="M52.6,100.7h6.1l4.1-26.6c-5.2-3.6-8-13.4-9.1-19.9c0.6-0.3,1.1-0.9,1.1-1.7
 		c0-1-0.8-1.9-1.9-1.9"></path>
 </g>
-<style>.BYmjNPRl_0{stroke-dasharray:55 57;stroke-dashoffset:56;animation:BYmjNPRl_draw 500ms ease 0ms forwards;}.BYmjNPRl_1{stroke-dasharray:55 57;stroke-dashoffset:56;animation:BYmjNPRl_draw 500ms ease 0ms forwards;}@keyframes BYmjNPRl_draw{100%{stroke-dashoffset:0;}}@keyframes BYmjNPRl_fade{0%{stroke-opacity:1;}91.48936170212767%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
-<style>.hMniVvKr_0{stroke-dasharray:7 9;stroke-dashoffset:8;animation:hMniVvKr_draw 500ms ease 0ms forwards;}.hMniVvKr_1{stroke-dasharray:15 17;stroke-dashoffset:16;animation:hMniVvKr_draw 500ms ease 0ms forwards;}.hMniVvKr_2{stroke-dasharray:60 62;stroke-dashoffset:61;animation:hMniVvKr_draw 500ms ease 0ms forwards;}.hMniVvKr_3{stroke-dasharray:61 63;stroke-dashoffset:62;animation:hMniVvKr_draw 500ms ease 0ms forwards;}@keyframes hMniVvKr_draw{100%{stroke-dashoffset:0;}}@keyframes hMniVvKr_fade{0%{stroke-opacity:1;}91.48936170212767%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
-<style>.KFThoDDT_0{stroke-dasharray:231 233;stroke-dashoffset:232;animation:KFThoDDT_draw 700ms ease-in-out 0ms forwards;}@keyframes KFThoDDT_draw{100%{stroke-dashoffset:0;}}@keyframes KFThoDDT_fade{0%{stroke-opacity:1;}91.83673469387755%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
-<style>.AmGCHOhW_0{stroke-dasharray:110 112;stroke-dashoffset:111;animation:AmGCHOhW_draw 400ms ease 0ms forwards;}@keyframes AmGCHOhW_draw{100%{stroke-dashoffset:0;}}@keyframes AmGCHOhW_fade{0%{stroke-opacity:1;}91.30434782608695%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+<style>.BYmjNPRl_0{stroke-dasharray:55 57;stroke-dashoffset:56;animation:BYmjNPRl_draw 700ms ease 0ms forwards;}.BYmjNPRl_1{stroke-dasharray:55 57;stroke-dashoffset:56;animation:BYmjNPRl_draw 700ms ease 0ms forwards;}@keyframes BYmjNPRl_draw{100%{stroke-dashoffset:0;}}@keyframes BYmjNPRl_fade{0%{stroke-opacity:1;}91.48936170212767%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+<style>.hMniVvKr_0{stroke-dasharray:7 9;stroke-dashoffset:8;animation:hMniVvKr_draw 700ms ease 0ms forwards;}.hMniVvKr_1{stroke-dasharray:15 17;stroke-dashoffset:16;animation:hMniVvKr_draw 700ms ease 0ms forwards;}.hMniVvKr_2{stroke-dasharray:60 62;stroke-dashoffset:61;animation:hMniVvKr_draw 700ms ease 0ms forwards;}.hMniVvKr_3{stroke-dasharray:61 63;stroke-dashoffset:62;animation:hMniVvKr_draw 700ms ease 0ms forwards;}@keyframes hMniVvKr_draw{100%{stroke-dashoffset:0;}}@keyframes hMniVvKr_fade{0%{stroke-opacity:1;}91.48936170212767%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+<style>.KFThoDDT_0{stroke-dasharray:231 233;stroke-dashoffset:232;animation:KFThoDDT_draw 900ms ease-in-out 0ms forwards;}@keyframes KFThoDDT_draw{100%{stroke-dashoffset:0;}}@keyframes KFThoDDT_fade{0%{stroke-opacity:1;}91.83673469387755%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+<style>.AmGCHOhW_0{stroke-dasharray:110 112;stroke-dashoffset:111;animation:AmGCHOhW_draw 600ms ease 0ms forwards;}@keyframes AmGCHOhW_draw{100%{stroke-dashoffset:0;}}@keyframes AmGCHOhW_fade{0%{stroke-opacity:1;}91.30434782608695%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 <style>
 .signmylogo-stroke1 path {animation-delay: 0.8s}
 .signmylogo-stroke2 path {animation-delay: 1.2s}
-.signmylogo-stroke3 path {animation-delay: 0.5s}
+.signmylogo-stroke3 path {animation-delay: 0.3s}
 .signmylogo-stroke4 path {animation-delay: 1.2s}
 </style>
 </svg>
