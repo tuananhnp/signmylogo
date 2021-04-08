@@ -13,6 +13,11 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.tagline {
+		display: none;
+	}
+
 @media (min-width: 991px) {
 	.portrait {
 		height:100vh;
