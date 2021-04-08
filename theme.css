@@ -144,8 +144,159 @@ body {
   margin-bottom: 0 !important; }
 
 /* Animated SVGs */
-#moomin-front, #starrynight-back, #moomin-back1, #moomin-back2, #moomin-back3, #starrynight-front1, #starrynight-front2, #claude-monet, #arthur-rackham, #edward-hopper {
-  opacity: 0; }
+#signmylogo, #moomin-front, #starrynight-back, #moomin-back1, #moomin-back2, #moomin-back3, #starrynight-front1, #starrynight-front2, #claude-monet, #arthur-rackham, #edward-hopper {
+  opacity: 1; }
+
+#signmylogo.animated {
+  opacity: 1; }
+  #signmylogo.animated .BYmjNPRl_0 {
+    stroke-dasharray: 55 57;
+    stroke-dashoffset: 56;
+    -webkit-animation: BYmjNPRl_draw 500ms ease 0ms forwards;
+            animation: BYmjNPRl_draw 500ms ease 0ms forwards; }
+  #signmylogo.animated .BYmjNPRl_1 {
+    stroke-dasharray: 55 57;
+    stroke-dashoffset: 56;
+    -webkit-animation: BYmjNPRl_draw 500ms ease 0ms forwards;
+            animation: BYmjNPRl_draw 500ms ease 0ms forwards; }
+
+@-webkit-keyframes BYmjNPRl_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes BYmjNPRl_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes BYmjNPRl_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.48936170212767% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+
+@keyframes BYmjNPRl_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.48936170212767% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+  #signmylogo.animated .hMniVvKr_0 {
+    stroke-dasharray: 7 9;
+    stroke-dashoffset: 8;
+    -webkit-animation: hMniVvKr_draw 500ms ease 0ms forwards;
+            animation: hMniVvKr_draw 500ms ease 0ms forwards; }
+  #signmylogo.animated .hMniVvKr_1 {
+    stroke-dasharray: 15 17;
+    stroke-dashoffset: 16;
+    -webkit-animation: hMniVvKr_draw 500ms ease 0ms forwards;
+            animation: hMniVvKr_draw 500ms ease 0ms forwards; }
+  #signmylogo.animated .hMniVvKr_2 {
+    stroke-dasharray: 60 62;
+    stroke-dashoffset: 61;
+    -webkit-animation: hMniVvKr_draw 500ms ease 0ms forwards;
+            animation: hMniVvKr_draw 500ms ease 0ms forwards; }
+  #signmylogo.animated .hMniVvKr_3 {
+    stroke-dasharray: 61 63;
+    stroke-dashoffset: 62;
+    -webkit-animation: hMniVvKr_draw 500ms ease 0ms forwards;
+            animation: hMniVvKr_draw 500ms ease 0ms forwards; }
+
+@-webkit-keyframes hMniVvKr_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes hMniVvKr_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes hMniVvKr_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.48936170212767% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+
+@keyframes hMniVvKr_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.48936170212767% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+  #signmylogo.animated .KFThoDDT_0 {
+    stroke-dasharray: 231 233;
+    stroke-dashoffset: 232;
+    -webkit-animation: KFThoDDT_draw 700ms ease-in-out 0ms forwards;
+            animation: KFThoDDT_draw 700ms ease-in-out 0ms forwards; }
+
+@-webkit-keyframes KFThoDDT_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes KFThoDDT_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes KFThoDDT_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.83673469387755% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+
+@keyframes KFThoDDT_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.83673469387755% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+  #signmylogo.animated .AmGCHOhW_0 {
+    stroke-dasharray: 110 112;
+    stroke-dashoffset: 111;
+    -webkit-animation: AmGCHOhW_draw 400ms ease 0ms forwards;
+            animation: AmGCHOhW_draw 400ms ease 0ms forwards; }
+
+@-webkit-keyframes AmGCHOhW_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes AmGCHOhW_draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes AmGCHOhW_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.30434782608695% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+
+@keyframes AmGCHOhW_fade {
+  0% {
+    stroke-opacity: 1; }
+  91.30434782608695% {
+    stroke-opacity: 1; }
+  100% {
+    stroke-opacity: 0; } }
+  #signmylogo.animated .signmylogo-stroke1 path {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s; }
+  #signmylogo.animated .signmylogo-stroke2 path {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s; }
+  #signmylogo.animated .signmylogo-stroke3 path {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s; }
+  #signmylogo.animated .signmylogo-stroke4 path {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s; }
 
 #moomin-back1.animated {
   opacity: 1; }
