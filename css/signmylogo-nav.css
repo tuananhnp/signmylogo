@@ -1,12 +1,5 @@
 /* TEMPLATE: Symmetrical nav with fullscreen menu in Mobile */
 
-@media only screen
-  and (min-width: 991px) {
-    .brand {
-		display: none;
-    }
-}
-
 .navbar-collapse { /* MOBILE: Enable fullscreen menu */
 	position: fixed;
 	top: 0%;
