@@ -40,9 +40,6 @@
 }
 
 @media (max-width: 991px) {
-	.section {
-		height: height: calc(100vh - calc(100vh - 100%));
-	}
 	.portrait {
 		height:40vh !important;
 	}
