@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/fader.css" type="text/css">
   <link rel="stylesheet" href="css/signmylogo-nav.css">
   <link rel="stylesheet" href="css/animated_nav_icon.css">
-  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css" type="text/css">
   <link rel="stylesheet" href="css/2-columns-test.css">
   <link rel="stylesheet" href="css/fullpage.min.css">
 </head>
@@ -18,9 +17,6 @@
   <svg id="fader" class="fade-out"></svg>
   <script> fadeInPage();
   </script>
-  <div id="scrolltotop_parent" class="scrolltotop_hide_onload scrolltotop_circle" style="display: none;">
-    <div tabindex="0" id="scrolltotop_arrow"></div>
-  </div>
   <nav class="navbar navbar-light fixed-top py-3 px-1">
     <div class="container-fluid">
       <button class="navbar-toggler nav-button border-0" type="button" data-toggle="collapse" data-target="#navbar4" onclick="switchColor()">
@@ -51,7 +47,8 @@
                 </div>
                 <div class="row">
                   <div class="col-12 mx-auto px-0">
-                    <object id="arthur-rackham" type="image/svg+xml" data="img\signatures\arthur-rackham.svg"></object>
+                    <object type="image/svg+xml" data="img\signatures\arthur-rackham.svg" style="position:absolute" id="arthur-rackham"></object>
+                    <object type="image/svg+xml" data="img\signatures\arthur-rackham-dummy.svg" style="visibility:hidden"></object>
                   </div>
                   <div class="svg-title-mobile col-12 px-0">
                     <h2 class="text-center text-lg-left mb-0 pt-3">Arthur Rackham</h2>
@@ -84,7 +81,8 @@
                 </div>
                 <div class="row">
                   <div class="col-xl-9 col-lg-10 col-md-9 mx-auto px-0 col-9">
-                    <object id="edward-hopper" type="image/svg+xml" data="img\signatures\edward-hopper.svg"></object>
+                    <object id="edward-hopper" type="image/svg+xml" data="img\signatures\edward-hopper.svg" style="position:absolute"></object>
+                    <object type="image/svg+xml" data="img\signatures\edward-hopper-dummy.svg" style="visibility:hidden"></object>
                   </div>
                   <div class="svg-title-mobile col-12 px-0">
                     <h2 class="text-center text-lg-left mb-0 pt-3" style="color:#bce3d8 !important">Edward Hopper</h2>
@@ -117,7 +115,8 @@
                 </div>
                 <div class="row">
                   <div class="col-12 mx-auto px-0">
-                    <object id="claude-monet" type="image/svg+xml" data="img\signatures\claude-monet.svg"></object>
+                    <object id="claude-monet" type="image/svg+xml" data="img\signatures\claude-monet.svg" style="position:absolute"></object>
+                    <object type="image/svg+xml" data="img\signatures\claude-monet-dummy.svg" style="visibility:hidden"></object>
                   </div>
                   <div class="svg-title-mobile col-12 px-0">
                     <h2 class="text-center text-lg-left mb-0 pt-3" style="color:#592f6e !important">Claude Monet</h2>
@@ -143,7 +142,6 @@
   <script src="js/fader.js"></script>
   <script src="js/nav.slide.down.transition.js"></script>
   <script src="js/dropdown.transition.js" ></script>
-  <script src="js/scrolltotop_arrow_code.js" ></script>
   <script src="js/fullpage.min.js" ></script>
   <script>
     $(document).ready(function() {
@@ -173,8 +171,8 @@
   </script>
   <script>
     new fullpage('#fullpage', {
-      scrollingSpeed: 700,
-      easingcss3: 'cubic-bezier(0.22, 1, 0.36, 1)',
+      scrollingSpeed: 500,
+      loopBottom: true,
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Arthur Rackham', 'Edward Hopper', 'Claude Monet']
