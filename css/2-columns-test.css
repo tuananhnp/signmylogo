@@ -41,13 +41,10 @@
 
 @media (max-width: 991px) {
 	.portrait {
-		height:45vh !important;
+		height:40vh !important;
 	}
 	.signature {
-		height:55vh !important;
-	}
-	.illustration {
-		height:70vh;
+		height:60vh !important;
 	}
 	
 	.svg-box1, .svg-box2, .svg-box3 {
