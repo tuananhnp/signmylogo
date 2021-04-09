@@ -41,10 +41,10 @@
 
 @media (max-width: 991px) {
 	.portrait {
-		height:55vh;
+		height:40vh !important;
 	}
 	.signature {
-		height:45vh;
+		height:60vh !important;
 	}
 	.illustration {
 		height:70vh;
