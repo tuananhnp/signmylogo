@@ -5,7 +5,7 @@
     .navbar-collapse li { /* MOBILE: Adjust text in fullscreen menu */
 		font-size: 1.5rem;
 		word-spacing: -0.05rem;
-		line-height: 40px;
+		line-height: 30px;
 		margin: 0px;
     }
 }
@@ -50,11 +50,14 @@
 	transition: 0.3s !important;
 }
 
+.nav-item a {
+	color: white !important;
+}
+
 .switch-color { /* MOBILE: Disable scroll in fullscreen menu */
 	overflow: hidden;
 }
 
-.switch-color .nav-item a {color: white !important} /* MOBILE: Text color in fullscreen menu */
 .switch-color .nav-item:hover a { /* MOBILE: Text hover color in fullscreen menu */
 	color: #af3618 !important;
 	transition: 0.3s !important;
