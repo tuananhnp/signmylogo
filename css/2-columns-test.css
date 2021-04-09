@@ -27,9 +27,6 @@
 	.signature {
 		height:100vh;
 	}
-	.signature-inner {
-		height:100vh !important;
-	}
 	.svg-title-mobile {
 		display: none;
 	}
@@ -43,13 +40,13 @@
 }
 
 @media (max-width: 991px) {
+	.section {
+		height: height: calc(100vh - calc(100vh - 100%));
+	}
 	.portrait {
 		height:40vh !important;
 	}
 	.signature {
-		height:60vh !important;
-	}
-	.signature-inner {
 		height:60vh !important;
 	}
 	.svg-box1, .svg-box2, .svg-box3 {
