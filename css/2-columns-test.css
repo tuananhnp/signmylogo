@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 991px) {
+	.section {
+		height: 100% !important;
+	}
 	.svg-box1, .svg-box2, .svg-box3 {
 		height: 100vh;
 	}
