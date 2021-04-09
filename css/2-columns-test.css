@@ -43,6 +43,12 @@
 	.section {
 		height: 100% !important;
 	}
+	.portrait {
+		height:50vh !important;
+	}
+	.signature {
+		height:50vh !important;
+	}
 	.svg-box1, .svg-box2, .svg-box3 {
 		height: 100vh;
 	}
