@@ -40,8 +40,13 @@
 }
 
 @media (max-width: 991px) {
-	.section {
-		height: 100% !important;
+	body {
+	  min-height: 100vh;
+	  /* mobile viewport bug fix */
+	  min-height: -webkit-fill-available;
+	}
+	html {
+	  height: -webkit-fill-available;
 	}
 	.portrait {
 		height:50vh !important;
