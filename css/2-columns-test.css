@@ -41,10 +41,10 @@
 
 @media (max-width: 991px) {
 	.portrait {
-		height:50vh;
+		height: calc(40 * var(--vh));
 	}
 	.signature {
-		height:50vh;
+		height: calc(60 * var(--vh));
 	}
 	.svg-box1, .svg-box2, .svg-box3 {
 		height: 100vh;
