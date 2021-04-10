@@ -7,21 +7,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="theme.css" type="text/css">
   <link rel="stylesheet" href="css/fader.css" type="text/css">
+  <link rel="stylesheet" href="css/signmylogo.css">
   <link rel="stylesheet" href="css/signmylogo-nav-home.css">
   <link rel="stylesheet" href="css/animated_nav_icon.css">
-  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css" type="text/css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.default.css">
-  <link rel="stylesheet" href="css/universal-parallax.css" type="text/css">
-  <link rel="stylesheet" href="css/jquery.hotspot.dark.css">
-  <link rel="stylesheet" href="css/jquery.hotspot.light.css">
-  <link rel="stylesheet" href="css/2-columns-test.css">
 </head>
 
 <body oncontextmenu="return false">
-  <div id="scrolltotop_parent" class="scrolltotop_hide_onload scrolltotop_circle" style="display: none;">
-    <div tabindex="0" id="scrolltotop_arrow"></div>
-  </div>
+  <svg id="fader" class="fade-out"></svg>
+  <script> fadeInPage();
+  </script>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
     <div class="container-fluid">
       <button class="navbar-toggler nav-button border-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbar4" onclick="switchColor()">
@@ -29,8 +23,8 @@
       </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar4">
         <ul class="navbar-nav">
-          <li class="brand nav-item mx-2 mb-0 pb-0"><a class="nav-link navbar-brand" href="index"><img class="d-inline-block align-top d-flex align-items-center img-fluid" src="img/signmylogo-logo - inverted.png" width="180"></a></li>
-          <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="showcase">SHOWCASE</a></li>
+          <li class="brand nav-item mb-0 pb-0"><a class="nav-link navbar-brand" href="index"><img class="d-inline-block align-top d-flex align-items-center img-fluid" src="img/signmylogo-logo - inverted.png" width="180"></a></li>
+          <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="demo">SEE DEMO</a></li>
           <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="">WHY SIGNMYLOGO?</a></li>
           <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="">HOW TO ORDER</a></li>
         </ul>
@@ -144,13 +138,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/navbar.shrink.onscroll.js"></script>
+  <script src="js/fader.js"></script>
   <script src="js/dropdown.transition.js"></script>
-  <script src="js/jquery.touchSwipe.min.js"></script>
-  <script src="js/scrolltotop_arrow_code.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/prevent_vertical_scroll.js"></script>
-  <script src="js/universal-parallax.min.js"></script>
   <script src="js/jquery.waypoints.js"></script>
   <script src="js/inview.js"></script>
   <script src="js/2-columns-test.js"></script>
@@ -198,7 +187,7 @@
     });
   </script>
   <script>
-    var titles = ["a painter", "an illustrator", "a fashion designer", "a photographer", "a videographer", "a film maker", "an interior designer", "an architect", "a book author", "a musician", "a blogger"];
+    var titles = ["an artist", "a painter", "an illustrator", "a fashion designer", "a photographer", "a videographer", "a film maker", "an interior designer", "an architect", "a book author", "a musician", "a blogger"];
 
     function rotateTitle() {
       var ct = $("#profession").data("title") || 0;
@@ -206,7 +195,7 @@
     }
     $(rotateTitle);
   </script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  
 </body>
 
 </html>

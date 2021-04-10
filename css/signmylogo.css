@@ -1,0 +1,67 @@
+@media (max-width: 767px) {
+	.tagline {
+		display: none;
+	}
+}
+
+@media (min-width: 991px) {
+	.portrait {
+		height:100vh;
+		width:100vw;
+	}
+	.signature {
+		height:100vh;
+	}
+	.svg-title-mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.portrait {
+		height: calc(45 * var(--vh));
+	}
+	.signature {
+		height: calc(55 * var(--vh));
+	}
+	.svg-title-desktop {
+		display: none !important;
+	}
+	.caption {
+		display: none !important;
+	}
+}
+
+.fp-tooltip {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  top: -12px !important;
+}
+
+#arthur-rackham, #edward-hopper, #claude-monet {
+  pointer-events: none;
+}
+
+.fp-viewing-ArthurRackham #fp-nav ul li a span {background: #a7491a}
+.fp-viewing-ArthurRackham .fp-tooltip {color: #a7491a !important}
+.fp-viewing-ArthurRackham .animated-icon span {background: #a7491a}
+
+.fp-viewing-EdwardHopper #fp-nav ul li a span{background: #e0c975}
+.fp-viewing-EdwardHopper .fp-tooltip {color: #e0c975 !important}
+.fp-viewing-EdwardHopper .animated-icon span {background: #e0c975}
+
+.fp-viewing-ClaudeMonet #fp-nav ul li a span{background: #ae501c}
+.fp-viewing-ClaudeMonet .fp-tooltip {color: #ae501c !important}
+.fp-viewing-ClaudeMonet .animated-icon span {background: #ae501c}
+
+.fp-viewing-ArthurRackham #arthur-rackham {display: block}
+.fp-viewing-ArthurRackham #edward-hopper {display: none}
+.fp-viewing-ArthurRackham #claude-monet {display: none;}
+
+.fp-viewing-EdwardHopper #arthur-rackham {display: none}
+.fp-viewing-EdwardHopper #edward-hopper {display: block}
+.fp-viewing-EdwardHopper #claude-monet {display: none}
+
+.fp-viewing-ClaudeMonet #arthur-rackham {display: none}
+.fp-viewing-ClaudeMonet #edward-hopper {display: none}
+.fp-viewing-ClaudeMonet #claude-monet {display: block}
