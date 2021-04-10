@@ -24,18 +24,22 @@
 	.signature {
 		height: calc(55 * var(--vh));
 	}
+	.signature-inner {
+		margin-top: -15%;
+	}
 	.svg-title-desktop {
 		display: none !important;
 	}
 	.caption {
 		display: none !important;
 	}
+	.fp-right {top: 72.5% !important}
 }
 
 .fp-tooltip {
   font-family: 'Playfair Display', serif !important;
-  font-size: 20px !important;
-  top: -12px !important;
+  font-size: 16px !important;
+  top: -8px !important;
 }
 
 #arthur-rackham, #edward-hopper, #claude-monet {
