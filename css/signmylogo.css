@@ -42,13 +42,17 @@
   top: -8px !important;
 }
 
-#arthur-rackham, #edward-hopper, #claude-monet {
+#arthur-rackham, #tove-jansson, #edward-hopper, #claude-monet {
   pointer-events: none;
 }
 
 .fp-viewing-ArthurRackham #fp-nav ul li a span {background: #a7491a}
 .fp-viewing-ArthurRackham .fp-tooltip {color: #a7491a !important}
 .fp-viewing-ArthurRackham .animated-icon span {background: #a7491a}
+
+.fp-viewing-ToveJansson #fp-nav ul li a span{background: #d8ae55}
+.fp-viewing-ToveJansson .fp-tooltip {color: #d8ae55 !important}
+.fp-viewing-ToveJansson .animated-icon span {background: #d8ae55}
 
 .fp-viewing-EdwardHopper #fp-nav ul li a span{background: #e0c975}
 .fp-viewing-EdwardHopper .fp-tooltip {color: #e0c975 !important}
@@ -59,13 +63,21 @@
 .fp-viewing-ClaudeMonet .animated-icon span {background: #ae501c}
 
 .fp-viewing-ArthurRackham #arthur-rackham {display: block}
+.fp-viewing-ArthurRackham #tove-jansson {display: none}
 .fp-viewing-ArthurRackham #edward-hopper {display: none}
 .fp-viewing-ArthurRackham #claude-monet {display: none;}
 
+.fp-viewing-ToveJansson #arthur-rackham {display: none}
+.fp-viewing-ToveJansson #tove-jansson {display: block}
+.fp-viewing-ToveJansson #edward-hopper {display: none}
+.fp-viewing-ToveJansson #claude-monet {display: none;}
+
 .fp-viewing-EdwardHopper #arthur-rackham {display: none}
+.fp-viewing-EdwardHopper #tove-jansson {display: none}
 .fp-viewing-EdwardHopper #edward-hopper {display: block}
 .fp-viewing-EdwardHopper #claude-monet {display: none}
 
 .fp-viewing-ClaudeMonet #arthur-rackham {display: none}
+.fp-viewing-ClaudeMonet #tove-jansson {display: none}
 .fp-viewing-ClaudeMonet #edward-hopper {display: none}
 .fp-viewing-ClaudeMonet #claude-monet {display: block}
