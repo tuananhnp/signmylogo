@@ -6,11 +6,11 @@
 
 @media (min-width: 991px) {
 	.portrait {
-		height:100vh;
-		width:100vw;
+		height: calc(100 * var(--vh));
+		width: 100vw;
 	}
 	.signature {
-		height:100vh;
+		height: calc(100 * var(--vh));
 	}
 	.svg-title-mobile {
 		display: none;
