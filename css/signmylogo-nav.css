@@ -1,5 +1,7 @@
 /* TEMPLATE: Symmetrical nav with fullscreen menu in Mobile */
 
+.animated-icon span {background: #e0c975 !important}
+
 @media only screen
   and (max-width: 767px) {
     .navbar-collapse li { /* MOBILE: Adjust text in fullscreen menu */
