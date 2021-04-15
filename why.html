@@ -244,18 +244,6 @@
     });
   </script>
   <script>
-	function stopMobileScroll() {
-		document.ontouchmove = function (e) {
-			e.preventDefault();
-		};
-	};
-
-	function enableMobileScroll() {
-		document.ontouchmove = function () {
-			return true;
-		};
-	};
-	
     var owl = $('#examples');
     owl.owlCarousel({
       items: 1,
@@ -264,8 +252,16 @@
       nav: true,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-	  onDrag: stopMobileScroll,
-	  onDragged: enableMobileScroll,
+	  onDrag: function() {
+		document.ontouchmove = function (e) {
+			e.preventDefault();
+		};
+	  },
+	  onDragged: function() {
+		document.ontouchmove = function () {
+			return true;
+		};
+	  },
       onTranslate: function() {
         $('.embed-responsive').each(function() {
           var vids = $(this).find("video");
