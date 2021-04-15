@@ -92,32 +92,27 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="UsageExamples" style="height:100vh">
+	<div class="section text-center bg-light" id="UsageExamples" style="height:100vh">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-12 col-12 mx-auto px-0">
-            <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/10-leiter_self-portrait_1950s.jpg" class="img-fluid">
-                </div>
-                <div class="carousel-item">
-                  <div class="embed-responsive embed-responsive-16by9">
+            <div class="owl-carousel owl-theme" id="test">
+            <div>
+				<div class="embed-responsive embed-responsive-16by9">
                     <video src="img/samples/sample-vid-01.mp4#t=0.001" class="embed-responsive-item" controls="controls" preload="metadata"> Your browser does not support HTML5 video.</video>
+				</div>
+			</div>
+            <div>
+				<div class="embed-responsive embed-responsive-16by9">
+                    <video src="img/samples/Pexels Videos 1926295.mp4#t=0.001" class="embed-responsive-item" controls="controls preload="metadata"> Your browser does not support HTML5 video.</video>
+				</div>
+			</div>
+            <div>
+				<div class="embed-responsive embed-responsive-16by9">
+                    <video src="img/samples/Reflection Of Trees.mp4#t=0.001" class="embed-responsive-item" controls="controls preload="metadata"> Your browser does not support HTML5 video.</video>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/Pexels Videos 1926295.mp4" class="embed-responsive-item" controls="controls"> Your browser does not support HTML5 video.</video>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/Reflection Of Trees.mp4" class="embed-responsive-item" controls="controls"> Your browser does not support HTML5 video.</video>
-                  </div>
-                </div>
-              </div> <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev" style="height:15%; top:42%"> <span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carousel" role="button" data-slide="next" style="height:15%; top:42%"> <span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span> </a>
-            </div>
+			</div>
+          </div>
           </div>
         </div>
       </div>
@@ -236,16 +231,6 @@
       element.classList.toggle("switch-color");
     }
   </script>
-  <script style="">
-    $("#carousel").on('slid.bs.carousel', function() {
-      var vids = $(this).find(".active video");
-      if (vids.length > 0) {
-		vids[0].pause();
-        vids[0].currentTime = 0;
-		vids[0].play();
-      }
-    })
-  </script>
   <script>
     var owl = $('#brands');
     owl.owlCarousel({
@@ -257,6 +242,27 @@
       nav: false,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+    });
+  </script>
+  <script>
+    var owl = $('#test');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      nav: true,
+      autoHeight: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+	  onTranslate: function() {
+        $('.embed-responsive').each(function() {
+            var vids = $(this).find("video");
+			  if (vids.length > 0) {
+				vids[0].pause();
+				vids[0].currentTime = 0;
+				vids[0].play();
+			  }
+        });
+	  }
     });
   </script>
   <script>
