@@ -97,6 +97,14 @@
         <div class="row">
           <div class="col-sm-12 col-lg-12 col-12 mx-auto px-0">
             <div class="owl-carousel owl-theme" id="test">
+			  <div>
+				<div class="row justify-content-center justify-content-lg-start">
+                  <h1 class="text-center text-lg-left">What's good about <span style="color:#094877">SignMyLogo</span>?</h1>
+                </div>
+                <div class="row">
+                  <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                </div>
+			  </div>
               <div>
                 <div class="embed-responsive embed-responsive-16by9">
                   <video src="img/samples/sample-vid-01.mp4" poster="img/samples/sample-vid-01-thumb.jpg" class="embed-responsive-item" controls="controls" preload="none"> Your browser does not support HTML5 video.</video>
@@ -260,17 +268,7 @@
             vids[0].currentTime = 0;
           }
         });
-      },
-	  onDrag: function() {
-		document.ontouchmove = function (e) {
-			e.preventDefault()
-		}
-	  },
-	  onDragged: function() {
-		document.ontouchmove = function (e) {
-			return true
-		}
-	  }
+      }
     });
   </script>
   <script>
@@ -284,7 +282,7 @@
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet'],
-	  normalScrollElements: '.owl-carousel'
+	  normalScrollElements: '.embed-responsive'
     });
   </script>
   <script>
