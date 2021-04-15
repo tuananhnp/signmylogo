@@ -258,18 +258,30 @@
           if (vids.length > 0) {
             vids[0].pause();
             vids[0].currentTime = 0;
-			vids[0].load();
           }
         });
       }
-	  owl.on('drag.owl.carousel', function(event) {
-		$('body').css('overflow', 'hidden');
-	  });
-
-	  owl.on('dragged.owl.carousel', function(event) {
-		$('body').css('overflow', 'auto');
-	  });
     });
+  </script>
+  <script>
+	var owl = $('#test');
+		owl.owlCarousel({
+		//  your options
+	})
+
+	// disable scroll
+	owl.on('drag.owl.carousel', function(event) {
+		document.ontouchmove = function (e) {
+			e.preventDefault()
+		}
+	})
+
+	// enable scroll
+	owl.on('dragged.owl.carousel', function(event) {
+		document.ontouchmove = function (e) {
+			return true
+		}
+	})
   </script>
   <script>
     var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
