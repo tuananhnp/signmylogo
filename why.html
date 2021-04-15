@@ -262,10 +262,14 @@
         });
       },
 	  onDrag: function() {
-		$j('body').css('overflow', 'hidden');
+		document.ontouchmove = function (e) {
+			e.preventDefault()
+		}
 	  },
 	  onDragged: function() {
-		$j('body').css('overflow', 'auto');
+		document.ontouchmove = function (e) {
+			return true
+		}
 	  }
     });
   </script>
