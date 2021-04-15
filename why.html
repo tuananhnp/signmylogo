@@ -252,10 +252,10 @@
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	  onDrag: function() {
-		$('#fullpage').css('touch-action', 'none');
+		$('#fullpage').css('overflow', 'hidden', 'important');
 	  },
 	  onDragged: function() {
-		$('#fullpage').css('touch-action', 'auto');
+		$('#fullpage').css('overflow', 'auto');
 	  },
       onTranslate: function() {
         $('.embed-responsive').each(function() {
