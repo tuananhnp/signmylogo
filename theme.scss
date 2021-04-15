@@ -200,6 +200,11 @@ drop {
 .owl-carousel .owl-item {
   -webkit-transform: translate3d(0px, 0px, 0px);}
 
+.owl-carousel {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
 
 /* Responsive layout for overlapping elements */
 .overlapping-text {

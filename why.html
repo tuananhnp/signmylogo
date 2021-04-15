@@ -92,27 +92,27 @@
         </div>
       </div>
     </div>
-	<div class="section text-center bg-light" id="UsageExamples" style="height:100vh">
+    <div class="section text-center bg-light" id="UsageExamples" style="height:100vh">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-12 col-12 mx-auto px-0">
             <div class="owl-carousel owl-theme" id="test">
-            <div>
-				<div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/sample-vid-01.mp4#t=0.001" class="embed-responsive-item" controls="controls" preload="metadata"> Your browser does not support HTML5 video.</video>
-				</div>
-			</div>
-            <div>
-				<div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/Pexels Videos 1926295.mp4#t=0.001" class="embed-responsive-item" controls="controls preload="metadata"> Your browser does not support HTML5 video.</video>
-				</div>
-			</div>
-            <div>
-				<div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/Reflection Of Trees.mp4#t=0.001" class="embed-responsive-item" controls="controls preload="metadata"> Your browser does not support HTML5 video.</video>
-                  </div>
-			</div>
-          </div>
+              <div>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <video src="img/samples/sample-vid-01.mp4#t=0.001" class="embed-responsive-item" controls="controls" preload="metadata"> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+              <div>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <video src="img/samples/Pexels Videos 1926295.mp4#t=0.001" class="embed-responsive-item" controls="controls preload=" metadata"=""> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+              <div>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <video src="img/samples/Reflection Of Trees.mp4#t=0.001" class="embed-responsive-item" controls="controls preload=" metadata"=""> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -248,22 +248,22 @@
     var owl = $('#test');
     owl.owlCarousel({
       items: 1,
-	  lazyload: true,
-	  loop: true,
+      lazyload: true,
+      loop: true,
       dots: false,
       nav: true,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-	  onTranslate: function() {
+      onTranslate: function() {
         $('.embed-responsive').each(function() {
-            var vids = $(this).find("video");
-			  if (vids.length > 0) {
-				vids[0].pause();
-				vids[0].currentTime = 0;
-				vids[0].play();
-			  }
+          var vids = $(this).find("video");
+          if (vids.length > 0) {
+            vids[0].pause();
+            vids[0].currentTime = 0;
+            vids[0].play();
+          }
         });
-	  }
+      }
     });
   </script>
   <script>
