@@ -124,7 +124,7 @@ drop {
   -webkit-transform: translate3d(0px, 0px, 0px); }
 
 .owl-carousel {
-  touch-action: pan-y; }
+  touch-action: pan-x; }
 
 /* Responsive layout for overlapping elements */
 .overlapping-text {
