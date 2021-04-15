@@ -123,9 +123,6 @@ drop {
 .owl-carousel .owl-item {
   -webkit-transform: translate3d(0px, 0px, 0px); }
 
-.owl-carousel {
-  touch-action: pan-x; }
-
 /* Responsive layout for overlapping elements */
 .overlapping-text {
   margin-top: 100px;
