@@ -260,7 +260,13 @@
             vids[0].currentTime = 0;
           }
         });
-      }
+      },
+	  onDrag: function() {
+		$j('body').css('overflow', 'hidden');
+	  },
+	  onDragged: function() {
+		$j('body').css('overflow', 'auto');
+	  }
     });
   </script>
   <script>
