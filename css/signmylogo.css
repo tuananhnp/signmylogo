@@ -1,6 +1,21 @@
+@media (min-width: 767px) {
+	.pack-list-mobile {
+		display: none;
+	}
+	.mobile-note {
+		display: none;
+	}
+}
+
 @media (max-width: 767px) {
 	.tagline {
 		display: none;
+	}
+	.pack-list-desktop {
+		display: none;
+	}
+	#fp-nav.fp-right {
+		right: 5px !important;
 	}
 }
 
