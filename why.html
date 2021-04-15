@@ -246,7 +246,7 @@
       }
     })
 	
-	$('.active').click(function(){this.paused?this.play():this.pause();});
+	$('.active').click(function(){this.paused?this.play():this.pause(); return false;});
   </script>
   <script>
     var owl = $('#brands');
