@@ -244,6 +244,18 @@
     });
   </script>
   <script>
+	function stopMobileScroll() {
+		document.ontouchmove = function (e) {
+			e.preventDefault();
+		};
+	};
+
+	function enableMobileScroll() {
+		document.ontouchmove = function () {
+			return true;
+		};
+	};
+	
     var owl = $('#examples');
     owl.owlCarousel({
       items: 1,
@@ -252,6 +264,8 @@
       nav: true,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+	  onDrag: stopMobileScroll,
+	  onDragged: enableMobileScroll,
       onTranslate: function() {
         $('.embed-responsive').each(function() {
           var vids = $(this).find("video");
@@ -273,8 +287,7 @@
       loopBottom: true,
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet'],
-	  normalScrollElements: '.embed-responsive'
+      navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet']
     });
   </script>
   <script>
