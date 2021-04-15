@@ -240,9 +240,13 @@
     $("#carousel").on('slid.bs.carousel', function() {
       var vids = $(this).find(".active video");
       if (vids.length > 0) {
+		vids[0].pause();
+        vids[0].currentTime = 0;
 		vids[0].load();
       }
     })
+	
+	$('.active').click(function(){this.paused?this.play():this.pause();});
   </script>
   <script>
     var owl = $('#brands');
