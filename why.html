@@ -103,7 +103,7 @@
                 </div>
                 <div class="carousel-item">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <video src="img/samples/sample-vid-01.mp4#t=0.001" class="embed-responsive-item" controls="controls" preload="metadata"> Your browser does not support HTML5 video.</video>
+                    <video src="img/samples/sample-vid-01.mp4#t=0.001" class="embed-responsive-item" controls="controls" preload="metadata" onClick="playPause();"> Your browser does not support HTML5 video.</video>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -245,8 +245,6 @@
 		vids[0].load();
       }
     })
-	
-	$('.active').click(function(){this.paused?this.play():this.pause(); return false;});
   </script>
   <script>
     var owl = $('#brands');
