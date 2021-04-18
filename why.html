@@ -40,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-11 col-sm-9 mx-auto my-3">
-            <div class="owl-carousel owl-theme" id="brands" >
+            <div class="owl-carousel owl-theme" id="brands" style="">
               <div class="row">
                 <div class="col-md-12 col-11 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/paul-smith.png"></div>
@@ -170,7 +170,7 @@
                 <div class="row justify-content-center">
                   <h1 class="text-center mb-0">With <span style="font-family: &quot;Hammersmith One&quot;; color:#094877">80 euro</span>, you will receive a pack<br>that includes:</h1>
                   <div class="col-md-12">
-                    <p class="mobile-note" >(Touch on <span style="color:#af3618">red</span> text to see details)</p>
+                    <p class="mobile-note" style="">(Touch on <span style="color:#af3618">red</span> text to see details)</p>
                   </div>
                 </div>
               </div>
@@ -240,7 +240,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" style=""></script>
   <script src="js/fader.js"></script>
   <script src="js/nav.slide.down.transition.js"></script>
   <script src="js/dropdown.transition.js"></script>
@@ -274,7 +274,7 @@
       element.classList.toggle("switch-color");
     }
   </script>
-  <script >
+  <script style="">
     var brands = $('#brands');
     var examples = $('#examples');
     brands.owlCarousel({
@@ -305,9 +305,15 @@
       },
       onDrag: function() {
         fullpage_api.setAllowScrolling(false);
+        document.ontouchmove = function(e) {
+          e.preventDefault();
+        }
       },
       onDragged: function() {
         fullpage_api.setAllowScrolling(true);
+        document.ontouchmove = function(e) {
+          return true;
+        }
       }
     });
   </script>
@@ -346,7 +352,7 @@
     }
     $(rotateTitle);
   </script>
-  
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
