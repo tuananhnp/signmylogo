@@ -39,7 +39,51 @@
     <div class="section text-center bg-light" id="WhatIsLogotype" style="height:100vh">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 my-4 mx-auto col-11 col-sm-9">
+          <div class="col-lg-6 col-11 col-sm-9 mx-auto my-3">
+            <div class="owl-carousel owl-theme" id="brands" >
+              <div class="row">
+                <div class="col-md-12 col-11 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/paul-smith.png"></div>
+                  <p class="pt-3"><span style="color:#094877">Logo of Paul Smith - a British fashion company<br>named after the founder/designer</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-11 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/hallmark.png"></div>
+                  <p><span style="color:#094877">American greeting card producer<br>founded in 1910 by Joyce Hall</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/gudrun-sjoden.png"></div>
+                  <p class="pt-3"><span style="color:#094877">Gudrun Sjödén's logo, a Swedish fashion company<br>named after the designer</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/marshall.png"></div>
+                  <p class="pt-3"><span style="color:#094877">Logo of Marshall Amplification company</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/bjorn-borg.png"></div>
+                  <p class="pt-3"><span style="color:#094877">Björn Borg - a Swedish apparel fashion brand<br>named after a tennis player</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/cafe-opera.png"></div>
+                  <p class="pt-3"><span style="color:#094877">A café and nightclub in Stockholm, Sweden</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-8 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/persol.png"></div>
+                  <p class="pt-3"><span style="color:#094877">An Italian luxury eyewear brand</span></p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-12 d-flex align-items-center px-sm-3 px-4 col-lg-6 col-sm-12">
             <div class="row">
@@ -200,6 +244,7 @@
   <script src="js/fader.js"></script>
   <script src="js/nav.slide.down.transition.js"></script>
   <script src="js/dropdown.transition.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
   <script src="js/scrolltotop_arrow_code.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/fullpage.min.js"></script>
@@ -229,38 +274,26 @@
       element.classList.toggle("switch-color");
     }
   </script>
-  <script>
-    var owl = $('#brands');
-    owl.owlCarousel({
+  <script >
+    var brands = $('#brands');
+    var examples = $('#examples');
+    brands.owlCarousel({
       items: 1,
       autoplay: true,
-      autoplayTimeout: 4000,
+      autoplayTimeout: 5000,
       loop: true,
       dots: false,
       nav: false,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
     });
-  </script>
-  <script>
-    var owl = $('#examples');
-    owl.owlCarousel({
+    examples.owlCarousel({
       items: 1,
-	  loop: true,
+      loop: true,
       dots: false,
       nav: true,
       autoHeight: true,
       navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-	  onDrag: function() {
-		element.ontouchmove = function (e) {
-			e.preventDefault();
-		}
-	  },
-	  onDragged: function() {
-		document.ontouchmove = function (e) {
-			return true; // Not use e.preventDefault()
-		}
-	  },
       onTranslate: function() {
         $('.embed-responsive').each(function() {
           var vids = $(this).find("video");
@@ -269,6 +302,12 @@
             vids[0].currentTime = 0;
           }
         });
+      },
+      onDrag: function() {
+        fullpage_api.setAllowScrolling(false);
+      },
+      onDragged: function() {
+        fullpage_api.setAllowScrolling(true);
       }
     });
   </script>
@@ -282,7 +321,7 @@
       loopBottom: true,
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet']
+      navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet'],
     });
   </script>
   <script>
