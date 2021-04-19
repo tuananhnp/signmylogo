@@ -20,6 +20,9 @@
 }
 
 @media (min-width: 991px) {
+	.section {
+		height: calc(100 * var(--vh));
+	}
 	.portrait {
 		height: calc(100 * var(--vh));
 		width: 100vw;
@@ -36,6 +39,9 @@
 }
 
 @media (max-width: 991px) {
+	.section {
+		height: calc(100 * var(--vh));
+	}
 	.portrait {
 		height: calc(45 * var(--vh));
 	}
@@ -54,6 +60,15 @@
 	.caption {
 		display: none !important;
 	}
+	#mouse {
+		display: none !important;
+	}
+}
+
+@media (max-width: 1399px) {
+	.fp-viewing-UsageExamples #fp-nav {
+		display: none
+	}
 }
 
 .fp-tooltip {
@@ -62,12 +77,20 @@
   top: -8px !important;
 }
 
-#arthur-rackham, #tove-jansson, #william-morris, #ruth-orkin, #edward-hopper, #claude-monet {
+#sign-my-logo, #arthur-rackham, #tove-jansson, #william-morris, #ruth-orkin, #edward-hopper, #claude-monet {
   pointer-events: none;
 }
 
 #fp-nav ul li a span {background: #e0c975 !important}
 .fp-tooltip {color: #e0c975 !important}
+
+.fp-viewing-Intro #sign-my-logo {display: block}
+.fp-viewing-WhatIsLogotype #sign-my-logo {display: none}
+.fp-viewing-WhyYourSignature #sign-my-logo {display: none}
+.fp-viewing-WhySignMyLogo #sign-my-logo {display: none}
+.fp-viewing-UsageExamples #sign-my-logo {display: none}
+.fp-viewing-Pricing #sign-my-logo {display: none}
+.fp-viewing-OrderNow #sign-my-logo {display: none}
 
 .fp-viewing-ArthurRackham #arthur-rackham {display: block}
 .fp-viewing-ArthurRackham #arthur-rackham-artworks {display: block}

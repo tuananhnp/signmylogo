@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css">
-  <link rel="stylesheet" href="css/fader.css" type="text/css">
-  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="css/fader.css">
+  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css">
   <link rel="stylesheet" href="css/signmylogo.css">
   <link rel="stylesheet" href="css/signmylogo-nav-why.css">
   <link rel="stylesheet" href="css/animated_nav_icon.css">
+  <link rel="stylesheet" href="css/animated-mouse-scroll.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/fullpage.min.css">
@@ -28,7 +29,7 @@
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar4">
         <ul class="navbar-nav">
           <li class="brand nav-item pb-0 mb-0"><a class="nav-link navbar-brand" href="index"><img class="d-inline-block align-top d-flex align-items-center img-fluid" src="img/signmylogo-logo - inverted.png" width="180"></a></li>
-          <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link disabled" href="demo">SEE DEMO</a></li>
+          <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="demo">SEE DEMO</a></li>
           <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="">WHY SIGNMYLOGO?</a></li>
           <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="">HOW TO ORDER</a></li>
         </ul>
@@ -36,15 +37,44 @@
     </div>
   </nav>
   <div id="fullpage">
-    <div class="section text-center bg-light" id="WhatIsLogotype" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="Intro">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-11 col-sm-9 mx-auto my-3">
-            <div class="owl-carousel owl-theme" id="brands" style="">
+          <div class="mx-auto col-lg-5 col-md-6 pb-2 pr-3 col-7">
+            <div class="row">
+              <div class="col-md-11 col-12 mx-auto">
+                <object type="image/svg+xml" data="img/logo-animated.svg" id="sign-my-logo"></object>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center px-sm-3 col-lg-6 col-sm-12 px-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="tagline row justify-content-center justify-content-lg-start" >
+                  <h1 class="text-center text-lg-left">Unique <span style="color:#094877">logotype</span><br>from your <span style="color:#094877">signature</span></h1>
+                </div>
+                <div class="row">
+                  <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">a book author</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                </div>
+                <div class="row">
+                  <a class="btn mx-auto mx-lg-0 btn-dark btn-lg px-3 pb-1" href="demo">SEE DEMO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#WhatIsLogotype"><button id="mouse" style="position:absolute; bottom:0; left:50%; transform:translate(-50%, -50%); background:none"><span></span></button></a>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="WhatIsLogotype">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-10 col-sm-9 mx-auto mb-2">
+            <div class="owl-carousel owl-theme" id="brands">
               <div class="row">
                 <div class="col-md-12 col-11 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/paul-smith.png"></div>
-                  <p class="pt-3"><span style="color:#094877">Logo of Paul Smith - a British fashion company<br>named after the founder/designer</span></p>
+                  <p class="pt-2"><span style="color:#094877">Logo of Paul Smith - a British fashion company<br>named after the founder/designer</span></p>
                 </div>
               </div>
               <div class="row">
@@ -56,7 +86,7 @@
               <div class="row">
                 <div class="col-md-12 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/gudrun-sjoden.png"></div>
-                  <p class="pt-3"><span style="color:#094877">Gudrun Sjödén's logo, a Swedish fashion company<br>named after the designer</span></p>
+                  <p class="pt-2"><span style="color:#094877">Gudrun Sjödén's logo, a Swedish fashion company<br>named after the designer</span></p>
                 </div>
               </div>
               <div class="row">
@@ -68,19 +98,19 @@
               <div class="row">
                 <div class="col-md-12 col-10 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/bjorn-borg.png"></div>
-                  <p class="pt-3"><span style="color:#094877">Björn Borg - a Swedish apparel fashion brand<br>named after a tennis player</span></p>
+                  <p class="pt-2"><span style="color:#094877">Björn Borg - a Swedish apparel fashion brand<br>named after a tennis player</span></p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 col-10 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/cafe-opera.png"></div>
-                  <p class="pt-3"><span style="color:#094877">A café and nightclub in Stockholm, Sweden</span></p>
+                  <p class="pt-2"><span style="color:#094877">A café and nightclub in Stockholm, Sweden</span></p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-10 col-8 mx-auto">
                   <div><img class="img-fluid d-block" src="img/examples/persol.png"></div>
-                  <p class="pt-3"><span style="color:#094877">An Italian luxury eyewear brand</span></p>
+                  <p class="pt-2"><span style="color:#094877">An Italian luxury eyewear brand</span></p>
                 </div>
               </div>
             </div>
@@ -100,14 +130,14 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="WhyMySignature" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="WhyYourSignature">
       <div class="container">
         <div class="row">
           <div class="col-12 px-sm-3 px-4 col-lg-12 col-sm-12">
             <div class="row">
               <div class="col-md-12 px-4">
                 <div class="row justify-content-start">
-                  <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span></h1>
+                  <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">signature</span></h1>
                 </div>
                 <div class="row">
                   <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
@@ -118,17 +148,17 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="WhySignMyLogo" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="WhySignMyLogo">
       <div class="container">
         <div class="row">
           <div class="col-12 px-sm-3 px-4 col-lg-12 col-sm-12">
             <div class="row">
-              <div class="col-md-12">
-                <div class="row justify-content-center justify-content-lg-start">
-                  <h1 class="text-center text-lg-left">What's good about <span style="color:#094877">SignMyLogo</span>?</h1>
+              <div class="col-md-12 px-4">
+                <div class="row">
+                  <h1 class="text-left">What's good about <span style="color:#094877">SignMyLogo</span>?</h1>
                 </div>
                 <div class="row">
-                  <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                  <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
                 </div>
               </div>
             </div>
@@ -136,7 +166,7 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="UsageExamples" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="UsageExamples">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-12 col-12 mx-auto px-0">
@@ -161,16 +191,16 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="Pricing" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="Pricing">
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex align-items-center px-sm-3 col-lg-12 col-sm-12 px-4 pb-2">
             <div class="row mx-auto">
               <div class="col-md-12">
                 <div class="row justify-content-center">
-                  <h1 class="text-center mb-0">With <span style="font-family: &quot;Hammersmith One&quot;; color:#094877">80 euro</span>, you will receive a pack<br>that includes:</h1>
+                  <h1 class="text-center mb-0">With <span style="font-family: &quot;Hammersmith One&quot;; color:#094877">80 euro</span>, you will receive:</h1>
                   <div class="col-md-12">
-                    <p class="mobile-note" style="">(Touch on <span style="color:#af3618">red</span> text to see details)</p>
+                    <p class="mobile-note">(Touch on <span style="color:#af3618">red</span> text to see details)</p>
                   </div>
                 </div>
               </div>
@@ -219,7 +249,7 @@
         </div>
       </div>
     </div>
-    <div class="section text-center bg-light" id="OrderNow" style="height:100vh">
+    <div class="section text-center bg-light h-100" data-anchor="OrderNow">
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex align-items-center px-sm-3 px-4 col-lg-12 col-sm-12">
@@ -240,7 +270,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" style=""></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/fader.js"></script>
   <script src="js/nav.slide.down.transition.js"></script>
   <script src="js/dropdown.transition.js"></script>
@@ -274,11 +304,29 @@
       element.classList.toggle("switch-color");
     }
   </script>
-  <script style="">
+  <script>
+    var titles = ["an artist", "a painter", "an illustrator", "a fashion designer", "a photographer", "a videographer", "a film maker", "an interior designer", "an architect", "a chef", "a book author", "a musician", "a blogger"];
+    var words = ["name", "signature", "logo", "personality"];
+
+    function rotateTitle() {
+      var ct = $("#profession").data("title") || 0;
+      $("#profession").data("title", ct == titles.length - 1 ? 0 : ct + 1).text(titles[ct]).fadeIn().delay(1500).fadeOut(200, rotateTitle);
+    }
+    $(rotateTitle);
+
+    function rotateWord() {
+      var ct = $("#personalization").data("word") || 0;
+      $("#personalization").data("word", ct == words.length - 1 ? 0 : ct + 1).text(words[ct]).fadeIn().delay(1500).fadeOut(200, rotateWord);
+    }
+    $(rotateWord);
+  </script>
+  <script>
     var brands = $('#brands');
     var examples = $('#examples');
     brands.owlCarousel({
       items: 1,
+      mouseDrag: false,
+      touchDrag: false,
       autoplay: true,
       autoplayTimeout: 5000,
       loop: true,
@@ -327,7 +375,7 @@
       loopBottom: true,
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Arthur Rackham', 'Tove Jansson', 'William Morris', 'Ruth Orkin', 'Edward Hopper', 'Claude Monet'],
+      navigationTooltips: ['Intro', 'WhatIsLogotype', 'WhyYourSignature', 'WhySignMyLogo', 'UsageExamples', 'Pricing', 'OrderNow'],
     });
   </script>
   <script>
@@ -343,16 +391,6 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
-  <script>
-    var titles = ["name", "signature", "logo", "personality"];
-
-    function rotateTitle() {
-      var ct = $("#personalization").data("title") || 0;
-      $("#personalization").data("title", ct == titles.length - 1 ? 0 : ct + 1).text(titles[ct]).fadeIn().delay(1500).fadeOut(200, rotateTitle);
-    }
-    $(rotateTitle);
-  </script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
