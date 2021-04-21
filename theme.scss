@@ -255,6 +255,15 @@ body {
   .signmylogo-stroke4 path {animation-delay: 1.2s}
 }
 
+.here {
+  color: #af3618;
+  transition: 0.3s !important
+}
+
+.here:hover {
+  color: #094877;
+  transition: 0.3s !important
+}
 
 @import 'bootstrap-4.3.1';
 

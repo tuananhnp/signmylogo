@@ -318,6 +318,14 @@ body {
     -webkit-animation-delay: 1.2s;
             animation-delay: 1.2s; }
 
+.here {
+  color: #af3618;
+  transition: 0.3s !important; }
+
+.here:hover {
+  color: #094877;
+  transition: 0.3s !important; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
