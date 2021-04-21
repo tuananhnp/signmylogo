@@ -4,133 +4,295 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css">
-  <link rel="stylesheet" href="css/fader.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="css/fader.css">
+  <link rel="stylesheet" href="css/scrolltotop_arrow_style.css">
   <link rel="stylesheet" href="css/signmylogo.css">
-  <link rel="stylesheet" href="css/signmylogo-nav-home.css">
+  <link rel="stylesheet" href="css/signmylogo-nav.css">
   <link rel="stylesheet" href="css/animated_nav_icon.css">
-  <title>SignMyLogo - Unique logotype from your signature</title>
-  <meta name="description" content="Your own signature can be a great choice of logo, if you are an artist branding online with your name. Not only it can be vectorized, but also animated for a handwriting effect - just like written on the screen by your own hand!">
-  <meta name="keywords" content="logo, logotype, signature, branding, vectorized, digitized, animated, handwriting, artist">
+  <link rel="stylesheet" href="css/animated-mouse-scroll.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/fullpage.min.css">
 </head>
 
 <body oncontextmenu="return false">
   <svg id="fader" class="fade-out"></svg>
   <script> fadeInPage();
   </script>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+  <nav class="navbar navbar-light py-3 px-1 fixed-top">
     <div class="container-fluid">
-      <button class="navbar-toggler nav-button border-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbar4" onclick="switchColor()" style="">
+      <button class="navbar-toggler nav-button border-0 ml-auto" type="button" onclick="switchColor()" data-target="#navbar4" data-toggle="collapse">
         <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
       </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar4">
         <ul class="navbar-nav">
-          <li class="brand nav-item mb-0 pb-0"><a class="nav-link navbar-brand" href="index"><img class="d-inline-block align-top d-flex align-items-center img-fluid" src="img/signmylogo-logo - inverted.png" width="180"></a></li>
-          <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="demo">SEE DEMO</a></li>
-          <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="">WHY SIGNMYLOGO?</a></li>
-          <li class="nav-item align-items-center d-flex justify-content-center py-1 mx-lg-2"><a class="nav-link" href="">HOW TO ORDER</a></li>
+          <li class="brand nav-item pb-0 mb-0"><a class="nav-link navbar-brand" href="why.html"><object type="image/svg+xml" data="img/signmylogo-logo-inverted.svg" width="180px"></object></a></li>
+          <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="demo">SEE DEMO</a></li>
+          <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link why-signmylogo" onclick="switchColor()" href="#WhySignMyLogo">WHY SIGNMYLOGO?</a></li>
+          <li class="nav-item align-items-center d-flex justify-content-center py-1"><a class="nav-link" href="">HOW TO ORDER</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="text-center align-items-center d-flex bg-light" id="cover" style="height: 100vh">
-    <div class="mb-5 container">
-      <div class="row">
-        <div class="mx-auto col-lg-5 col-md-6 pb-2 pr-3 col-7">
-          <svg version="1.1" id="signmylogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="10 18 140 140" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-                stroke: #231F20;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-miterlimit: 10;
-              }
-
-              .st1 {
-                fill: none;
-                stroke: #af3618;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-miterlimit: 10;
-              }
-
-              .st2 {
-                fill: none;
-                stroke: #094877;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-miterlimit: 10;
-              }
-            </style>
-            <g id="XMLID_5_">
-              <path id="XMLID_8_" class="st0" d="M108.9,68.5c0,0-7.6,12.3-9.4,15.1c-2.3,3.6-1.4,5.4,0.5,5.4c5.5,0,12.1-10.6,12.1-10.6"></path>
-              <path id="XMLID_16_" class="st0" d="M124.5,68.5c-8.1,0-21.4,20.7-12.8,20.7C118.9,89.2,132.5,68.5,124.5,68.5z"></path>
-              <path id="XMLID_19_" class="st0" d="M128.4,77.5c0,0,6.1-4.1,9-8.9l-12.8,20.7"></path>
-              <path id="XMLID_21_" class="st0" d="M128.1,83.5c2.3-3.7,11.1-14.9,16.1-14.9c1.9,0,3,1.4-0.5,7.1c-0.8,1.3-1.8,3-3.8,6.2
-		c-2,3.2-4.4,7.3-1,7.3c3.1,0,5.3-3.9,5.3-3.9"></path>
-              <path id="XMLID_31_" class="st0" d="M130.3,68.5c0,0-7.7,12.4-12.4,20c-4.1,6.7-21.8,40.5-37.6,40.5"></path>
-            </g>
-            <g id="XMLID_3_">
-              <g id="XMLID_11_">
-                <polyline id="XMLID_18_" class="st0" points="64.6,138.7 67.3,136.6 67.3,146.3 		"></polyline>
-                <line id="XMLID_17_" class="st0" x1="65.1" y1="146.3" x2="69.5" y2="146.3"></line>
-                <line id="XMLID_15_" class="st0" x1="72.2" y1="146.3" x2="76.6" y2="146.3"></line>
-                <line id="XMLID_14_" class="st0" x1="79.2" y1="146.3" x2="83.6" y2="146.3"></line>
-                <path id="XMLID_13_" class="st0" d="M67.3,140.7c0-4.7,7-4.8,7,0c0,3,0,5.6,0,5.6"></path>
-                <path id="XMLID_12_" class="st0" d="M74.4,140.7c0-4.7,7-4.8,7,0c0,3,0,5.6,0,5.6"></path>
-              </g>
-              <g id="XMLID_24_">
-                <path id="XMLID_23_" class="st0" d="M83.1,138.7l2.8-2c0,0,0,4.4,0,6c0,5,8.1,5.2,8.1-0.5"></path>
-                <path id="XMLID_22_" class="st0" d="M91.3,138.6l2.6-1.5c0,0,0,7.2,0,10.5c0,4.6-5.9,6-8.5,3.3"></path>
-              </g>
-              <g id="XMLID_26_">
-                <polyline id="XMLID_29_" class="st0" points="101.2,130.8 104,128.8 104,146.3 		"></polyline>
-                <line id="XMLID_28_" class="st0" x1="101.8" y1="146.3" x2="106.2" y2="146.3"></line>
-              </g>
-              <g id="XMLID_35_">
-                <ellipse id="XMLID_34_" class="st0" cx="126.6" cy="141.4" rx="5.2" ry="4.9"></ellipse>
-                <ellipse id="XMLID_33_" class="st0" cx="126.1" cy="151.8" rx="5.2" ry="3.5"></ellipse>
-                <path id="XMLID_32_" class="st0" d="M130.1,137.7c0,0,2.6-6.2,6.9-5"></path>
-                <line id="XMLID_30_" class="st0" x1="127.3" y1="142.7" x2="124.6" y2="151.1"></line>
-              </g>
-              <ellipse id="XMLID_36_" class="st0" cx="113" cy="141.2" rx="5.8" ry="5.1"></ellipse>
-              <ellipse id="XMLID_37_" class="st0" cx="140.2" cy="141.2" rx="5.8" ry="5.1"></ellipse>
-            </g>
-            <g class="signmylogo-stroke3">
-              <path id="XMLID_56_" class="st1 KFThoDDT_0" d="M113.2,63.7c0.2,1-0.5,2-1.5,2.2c-1,0.2-2-0.5-2.2-1.5c-0.2-1,0.5-2,1.5-2.2
-	S113.1,62.7,113.2,63.7c11.3-2.1,26.2-15.5,26.2-26.4c0-10.3-10.5-15.5-22.7-15.5c-16.8,0-38.6,9.7-38.6,28.8
-	c0,14,12.3,26.7,12.3,44.2c0,14.5-12.4,30-30.2,33.4"></path>
-            </g>
-            <g class="signmylogo-stroke4">
-              <path id="XMLID_7_" class="st1 AmGCHOhW_0" d="M45.6,128.5c-43.1-6-39.6-64.4,5.5-75.7"></path>
-            </g>
-            <g class="signmylogo-stroke1" id="XMLID_1_">
-              <path id="XMLID_5_" class="st2 BYmjNPRl_0" d="M46.2,146.9c0-14.8-1.8-34-4.2-40.9c0-1.7,1.2-3.4,3-3.4h7.9"></path>
-              <path id="XMLID_6_" class="st2 BYmjNPRl_1" d="M59.6,146.9c0-14.8,1.8-34,4.2-40.9c0-1.7-1.2-3.4-3-3.4h-7.9"></path>
-            </g>
-            <g class="signmylogo-stroke2" id="XMLID_3_">
-              <path id="XMLID_27_" class="st2 hMniVvKr_0" d="M51.8,77.6A1.1,1.1 0,1,1 54,77.6A1.1,1.1 0,1,1 51.8,77.6"></path>
-              <path id="XMLID_2_" class="st2 hMniVvKr_1" d="M52.9,76.5L52.9,61.5"></path>
-              <path id="XMLID_9_" class="st2 hMniVvKr_2" d="M52.6,100.7h-5.5l-4.1-26.6c5.2-3.6,8-13.4,9.1-19.9c-0.6-0.3-1.1-0.9-1.1-1.7
-		c0-1,0.8-1.9,1.9-1.9"></path>
-              <path id="XMLID_4_" class="st2 hMniVvKr_3" d="M52.6,100.7h6.1l4.1-26.6c-5.2-3.6-8-13.4-9.1-19.9c0.6-0.3,1.1-0.9,1.1-1.7
-		c0-1-0.8-1.9-1.9-1.9"></path>
-            </g>
-          </svg>
+  <div id="fullpage">
+    <div class="section text-center bg-light h-100" data-anchor="Intro">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto col-lg-5 col-md-6 pb-2 pr-3 col-7">
+            <div class="row">
+              <div class="col-md-11 col-12 mx-auto">
+                <object type="image/svg+xml" data="img/logo-animated.svg" id="sign-my-logo"></object>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center px-sm-3 col-lg-6 col-sm-12 px-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="tagline row justify-content-center justify-content-lg-start" style="">
+                  <h1 class="text-center text-lg-left">Unique <span style="color:#094877">logotype</span><br>from your <span style="color:#094877">signature</span></h1>
+                </div>
+                <div class="row">
+                  <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">a book author</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                </div>
+                <div class="row">
+                  <a class="btn mx-auto mx-lg-0 btn-dark btn-lg px-3 pb-1" href="demo">SEE DEMO</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 d-flex align-items-center px-sm-3 col-lg-6 col-sm-12 px-4">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="tagline row justify-content-center justify-content-lg-start">
-                <h1 class="text-center text-lg-left">Unique <span style="color:#094877">logotype</span><br>from your <span style="color:#094877">signature</span></h1>
+      </div>
+      <a href="#WhatIsLogotype"><button id="mouse" style="position:absolute; bottom:0; left:50%; transform:translate(-50%, -50%); background:none"><span></span></button></a>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="WhatIsLogotype">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-10 col-sm-9 mx-auto mb-2">
+            <div class="owl-carousel owl-theme" id="brands">
+              <div class="row">
+                <div class="col-md-12 col-11 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/paul-smith.png"></div>
+                  <p class="pt-2"><span style="color:#094877">Logo of Paul Smith - a British fashion company<br>named after the founder/designer</span></p>
+                </div>
               </div>
               <div class="row">
-                <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                <div class="col-md-12 col-11 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/hallmark.png"></div>
+                  <p><span style="color:#094877">American greeting card producer<br>founded in 1910 by Joyce Hall</span></p>
+                </div>
               </div>
               <div class="row">
-                <a class="btn mx-auto mx-lg-0 btn-dark btn-lg px-3 pb-1" href="demo">SEE DEMO</a>
+                <div class="col-md-12 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/gudrun-sjoden.png"></div>
+                  <p class="pt-2"><span style="color:#094877">Gudrun Sjödén's logo, a Swedish fashion company<br>named after the designer</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/marshall.png"></div>
+                  <p class="pt-3"><span style="color:#094877">Logo of Marshall Amplification company</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/bjorn-borg.png"></div>
+                  <p class="pt-2"><span style="color:#094877">Björn Borg - a Swedish apparel fashion brand<br>named after a tennis player</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-10 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/cafe-opera.png"></div>
+                  <p class="pt-2"><span style="color:#094877">A café and nightclub in Stockholm, Sweden</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-8 mx-auto">
+                  <div><img class="img-fluid d-block" src="img/examples/persol.png"></div>
+                  <p class="pt-2"><span style="color:#094877">An Italian luxury eyewear brand</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center px-sm-3 px-4 col-lg-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row justify-content-center justify-content-lg-start">
+                  <h1 class="text-center text-lg-left">What is a <span style="color:#094877">logotype</span>?</h1>
+                </div>
+                <div class="row">
+                  <p class="text-center text-lg-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="WhyYourSignature">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 px-sm-3 px-4 col-lg-12 col-sm-12">
+            <div class="row">
+              <div class="col-md-12 px-4">
+                <div class="row justify-content-start">
+                  <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">signature</span></h1>
+                </div>
+                <div class="row">
+                  <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="WhySignMyLogo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 px-sm-3 px-4 col-lg-12 col-sm-12">
+            <div class="owl-carousel owl-theme" id="why" style="">
+              <div class="row" style="height: calc(100 * var(--vh))">
+                <div class="col-md-12 px-4 my-auto">
+                  <div class="row justify-content-start">
+                    <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">signature</span></h1>
+                  </div>
+                  <div class="row">
+                    <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="height: calc(100 * var(--vh))">
+                <div class="col-md-12 px-4 my-auto">
+                  <div class="row justify-content-start">
+                    <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">signature</span></h1>
+                  </div>
+                  <div class="row">
+                    <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="height: calc(100 * var(--vh))">
+                <div class="col-md-12 px-4 my-auto">
+                  <div class="row justify-content-start">
+                    <h1 class="text-left">Your <span id="personalization" style="font-family: &quot;Hammersmith One&quot;; color:#094877">signature</span></h1>
+                  </div>
+                  <div class="row">
+                    <p class="text-left lead">Are you <span id="profession" style="font-family: &quot;Hammersmith One&quot;; color:#094877">this</span>? Are you branding online with your name?<br><br>Not only your signature will be <i>hand-traced</i>, but also <i>animated</i> for a handwriting effect - just like written on the screen by your own hand!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="UsageExamples">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12 col-12 mx-auto px-0">
+            <div class="owl-carousel owl-theme" id="examples" style="">
+              <div class="row px-0 mx-0" style="height: calc(100 * var(--vh))">
+                <div class="col-12 embed-responsive embed-responsive-16by9 my-auto px-0 mx-0">
+                  <video src="img/samples/sample-vid-01.mp4" poster="img/samples/sample-vid-01-thumb.jpg" class="embed-responsive-item" controls="controls" preload="none"> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+              <div class="row px-0 mx-0" style="height: calc(100 * var(--vh))">
+                <div class="col-12 embed-responsive embed-responsive-16by9 my-auto px-0 mx-0">
+                  <video src="img/samples/Pexels Videos 1926295.mp4" class="embed-responsive-item" controls="controls" preload="none"> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+              <div class="row px-0 mx-0" style="height: calc(100 * var(--vh))">
+                <div class="col-12 embed-responsive embed-responsive-16by9 my-auto px-0 mx-0">
+                  <video src="img/samples/Reflection Of Trees.mp4" class="embed-responsive-item" controls="controls" preload="none"> Your browser does not support HTML5 video.</video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="Pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center px-sm-3 col-lg-12 col-sm-12 px-4 pb-2">
+            <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <h1 class="text-center mb-0">With <span style="font-family: &quot;Hammersmith One&quot;; color:#094877">80 euro</span>, you will receive:</h1>
+                  <div class="col-md-12">
+                    <p class="mobile-note">(Touch on <span style="color:#af3618">red</span> text to see details)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pack-list-mobile row text-left px-4">
+          <ul class="mx-auto">
+            <li class="lead pb-3">Two (02) <a data-toggle="tooltip" data-placement="top" class="text-secondary" title="one AI and one PDF">vectorized files</a> of your signature</li>
+            <li class="lead pb-3">Two (02) <a data-toggle="tooltip" data-placement="top" class="text-secondary" title="one Black text &amp; one White text">animated SVG files</a> of your signature</li>
+            <li class="lead pb-3">Two (02) <a data-toggle="tooltip" data-placement="top" class="text-secondary" title="one Black text &amp; one White text">rasterized PNG files</a> of your signature</li>
+            <li class="lead">Two (02) <a data-toggle="tooltip" data-placement="top" class="text-secondary" title="one Black text &amp; one White text">video clips</a> of the animated signature</li>
+          </ul>
+        </div>
+        <div class="pack-list-desktop row text-left px-3 px-lg-5">
+          <div class="col-md-6 p-3">
+            <h4>Two (02) <span style="color:#af3618">vectorized files</span><br>of your signature:</h4>
+            <ul class="lead">
+              <li class="pt-2">An AI (Adobe Illustrator) vector file</li>
+              <li class="pt-2">A PDF vector file</li>
+            </ul>
+          </div>
+          <div class="col-md-6 p-3">
+            <h4>Two (02) <span style="color:#af3618">animated SVG files</span><br>of your signature:</h4>
+            <ul class="lead">
+              <li class="pt-2">Black text version</li>
+              <li class="pt-2">White text version</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-list-desktop row text-left px-3 px-lg-5">
+          <div class="col-md-6 px-3 pb-3">
+            <h4>Two (02) <span style="color:#af3618">rasterized PNG files</span><br>of your signature:</h4>
+            <ul class="lead">
+              <li class="pt-2">Black text on transparent background version (1920x1080)</li>
+              <li class="pt-2">White text on transparent background version (1920x1080)</li>
+            </ul>
+          </div>
+          <div class="col-md-6 px-3 pb-3">
+            <h4>Two (02) <span style="color:#af3618">video clips</span><br>of the animated signature:</h4>
+            <ul class="lead">
+              <li class="pt-2">Black text on white background version (1920x1080 at 120 fps)</li>
+              <li class="pt-2">White text on black background version (1920x1080 at 120 fps))</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-center bg-light h-100" data-anchor="OrderNow">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-12 align-items-center px-sm-3 px-4 col-lg-12 col-sm-12">
+            <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <h1 class="text-center">Check out some <span style="color:#094877">examples</span> below:</h1>
+                </div>
+                <div class="row justify-content-center pb-4">
+                  <a class="btn mx-auto mx-lg-0 btn-dark btn-lg px-3 pb-1" href="demo">SEE DEMO</a>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-auto">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <h1 class="text-center">Ready to create <span style="color:#094877">your own</span>?</h1>
+                </div>
+                <div class="row justify-content-center">
+                  <a class="btn mx-auto mx-lg-0 btn-dark btn-lg px-3 pb-1" href="how-to-order">ORDER NOW</a>
+                </div>
               </div>
             </div>
           </div>
@@ -142,10 +304,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/fader.js"></script>
+  <script src="js/nav.slide.down.transition.js"></script>
   <script src="js/dropdown.transition.js"></script>
-  <script src="js/jquery.waypoints.js" style=""></script>
-  <script src="js/inview.js" style=""></script>
-  <script src="js/2-columns-test.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
+  <script src="js/scrolltotop_arrow_code.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/fullpage.min.js"></script>
   <script>
     $(document).ready(function() {
       $('.nav-button').on('click', function() {
@@ -158,12 +322,7 @@
       return false;
     });
   </script>
-  <script>
-    new universalParallax().init({
-      speed: 12
-    });
-  </script>
-  <script>
+  <script style="">
     $('.btn, .btn-outline, .btn-lg').click(function() {
       var sectionTo = $(this).attr('href');
       $('html, body').animate({
@@ -171,34 +330,126 @@
       }, 2000);
     });
   </script>
-  <script>
+  <script style="">
     function switchColor() {
       var element = document.body;
       element.classList.toggle("switch-color");
     }
   </script>
   <script style="">
-    var $svg = $('#signmylogo');
-    var in_view = new Waypoint.Inview({
-      element: $svg[0],
-      enter: function() {
-        $svg.addClass('animated');
-      },
-      exited: function() {
-        $svg.removeClass('animated');
-      },
-    });
-  </script>
-  <script style="">
     var titles = ["an artist", "a painter", "an illustrator", "a fashion designer", "a photographer", "a videographer", "a film maker", "an interior designer", "an architect", "a chef", "a book author", "a musician", "a blogger"];
+    var words = ["name", "signature", "logo", "personality"];
 
     function rotateTitle() {
       var ct = $("#profession").data("title") || 0;
       $("#profession").data("title", ct == titles.length - 1 ? 0 : ct + 1).text(titles[ct]).fadeIn().delay(1500).fadeOut(200, rotateTitle);
     }
     $(rotateTitle);
+
+    function rotateWord() {
+      var ct = $("#personalization").data("word") || 0;
+      $("#personalization").data("word", ct == words.length - 1 ? 0 : ct + 1).text(words[ct]).fadeIn().delay(1500).fadeOut(200, rotateWord);
+    }
+    $(rotateWord);
   </script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  <script style="">
+    var brands = $('#brands');
+    var examples = $('#examples');
+    var why = $('#why');
+    brands.owlCarousel({
+      items: 1,
+      mouseDrag: false,
+      touchDrag: false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      loop: true,
+      dots: false,
+      nav: false,
+      autoHeight: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+    });
+    examples.owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      onTranslate: function() {
+        $('.embed-responsive').each(function() {
+          var vids = $(this).find("video");
+          if (vids.length > 0) {
+            vids[0].pause();
+            vids[0].currentTime = 0;
+          }
+        });
+      },
+      onDrag: function() {
+        fullpage_api.setAllowScrolling(false);
+        document.ontouchmove = function(e) {
+          e.preventDefault();
+        }
+      },
+      onDragged: function() {
+        fullpage_api.setAllowScrolling(true);
+        document.ontouchmove = function(e) {
+          return true;
+        }
+      }
+    });
+    why.owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      onDrag: function() {
+        fullpage_api.setAllowScrolling(false);
+        document.ontouchmove = function(e) {
+          e.preventDefault();
+        }
+      },
+      onDragged: function() {
+        fullpage_api.setAllowScrolling(true);
+        document.ontouchmove = function(e) {
+          return true;
+        }
+      }
+    });
+  </script>
+  <script>
+    var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '1%');
+    dots.css('left', '50%');
+    dots.css('transform', 'translate(-50%, -50%');
+  </script>
+  <script>
+    new fullpage('#fullpage', {
+      scrollingSpeed: 500,
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Intro', 'What is a logotype?', 'Why your signature?', 'Why SignMyLogo?', 'Usage examples', 'Pricing', 'Order now!'],
+    });
+  </script>
+  <script>
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <!-- <script>
+    $('.navbar-collapse').on('shown.bs.collapse', function() {
+      fullpage_api.setMouseWheelScrolling(false);
+    });
+    $('.navbar-collapse').on('hidden.bs.collapse', function() {
+      fullpage_api.setMouseWheelScrolling(true);
+    });
+  </script> -->
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 /* TEMPLATE: Symmetrical nav with fullscreen menu in Mobile */
 
-#fp-nav ul li a span {background: #af3618 !important}
-.fp-tooltip {color: #af3618 !important}
+.animated-icon span {background: #e0c975 !important}
 
 @media only screen
   and (max-width: 767px) {

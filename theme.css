@@ -97,10 +97,6 @@ drop {
   font-size: 450%;
   font-family: 'Playfair Display', serif; }
 
-/* Adjust owl carousel's slide height */
-.slide-item {
-  height: 850px; }
-
 /* Styling owl carousel's prev & next buttons */
 .owl-prev, .owl-next {
   position: absolute;
@@ -122,6 +118,30 @@ drop {
 
 .owl-carousel .owl-item {
   -webkit-transform: translate3d(0px, 0px, 0px); }
+
+#why .owl-dots .active span {
+  background: #af3618 !important; }
+
+#why .owl-dots span {
+  background: #094877 !important; }
+
+#why .owl-dots span:hover {
+  background: #af3618 !important; }
+
+#why .owl-prev i {
+  color: #af3618; }
+
+#why .owl-next i {
+  color: #af3618; }
+
+#examples .owl-dots .active span {
+  background: #af3618 !important; }
+
+#examples .owl-dots span {
+  background: #094877 !important; }
+
+#examples .owl-dots span:hover {
+  background: #af3618 !important; }
 
 /* Responsive layout for overlapping elements */
 .overlapping-text {

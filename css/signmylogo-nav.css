@@ -1,6 +1,7 @@
 /* TEMPLATE: Symmetrical nav with fullscreen menu in Mobile */
 
-.animated-icon span {background: #e0c975 !important}
+#fp-nav ul li a span {background: #af3618 !important}
+.fp-tooltip {color: #af3618 !important}
 
 @media only screen
   and (max-width: 767px) {
@@ -54,10 +55,6 @@
 
 .nav-item a {
 	color: white !important;
-}
-
-.switch-color { /* MOBILE: Disable scroll in fullscreen menu */
-	overflow: hidden;
 }
 
 .switch-color .nav-item:hover a { /* MOBILE: Text hover color in fullscreen menu */
